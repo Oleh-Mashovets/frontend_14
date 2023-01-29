@@ -4,10 +4,6 @@
 const wrap = document.getElementById('character__list');
 document.body.onload = addElement;
 
-function initState() {
-	getCharacters();
-	addElement();
-}
 let res;
 async function getCharacters (page) {
 	const url = 'https://rickandmortyapi.com/api/character?page=' + page;
